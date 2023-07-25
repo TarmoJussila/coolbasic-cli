@@ -5,7 +5,7 @@ Simple command line tools for the CoolBasic game engine. By using the CoolBasic 
 Prerequisites
 -------
 
-CoolBasic compiler (*CBCompiler.exe*) is required to use the CLI tools. The easist way to obtain the compiler is to install the CoolBasic game engine. You can [download](https://www.coolbasic.com) the game engine from the official CoolBasic website.
+CoolBasic compiler (*CBCompiler.exe*) is required to use the CLI tools. The easiest way to obtain the compiler is to install the CoolBasic game engine. You can [download](https://www.coolbasic.com) the game engine from the official CoolBasic website.
 
 1) Download and install the CoolBasic game engine (see link above)
 2) Clone this repository or download its contents (the .ini and .bat files)
@@ -18,12 +18,14 @@ Setup
 
 The only file you need to configure is the `cbcli-config.ini` which contains the following variables:
 
-| Variable          | Description                | Example value                   | Note                                      |
-| ----------------- | -------------------------- | ------------------------------- | ----------------------------------------- |
-| SOURCE_FILE_PATH  | Source code file path      | C:\CoolBasic\Help\lessons\01.cb | CoolBasic project main `.cb` source file  |
-| SOURCE_DIR_PATH   | Source directory path      | C:\CoolBasic\Help\lessons\      | Make sure directory path ends with `\`    |
-| TARGET_EXE_PATH   | Target executable path     | C:\CoolBasic\cbRun              | Extension `.exe` is auto-appended         |
-| COMPILER_DIR_PATH | Compiler directory path    | C:\CoolBasic\IDE                | Directory has to contain `CBCompiler.exe` |
+| Variable          | Description             | Example value                   | Note                         |
+| ----------------- | ----------------------- | ------------------------------- | ------------------------------- |
+| SOURCE_FILE_PATH  | Source code file path   | C:\CoolBasic\Help\lessons\01.cb | Main `.cb` source code file     |
+| SOURCE_DIR_PATH   | Source directory path   | C:\CoolBasic\Help\lessons\      | Path has to end with `\`        |
+| TARGET_EXE_PATH   | Target executable path  | C:\CoolBasic\cbRun              | `.exe` is auto-appended         |
+| COMPILER_DIR_PATH | Compiler directory path | C:\CoolBasic\IDE                | Root for `CBCompiler.exe` |
+
+The variables and values are joined together with a `=` without any whitespace or quotations around values.
 
 Run
 -------
