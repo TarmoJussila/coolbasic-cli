@@ -1,6 +1,6 @@
 # CoolBasic CLI
 
-Simple command line tools for the CoolBasic game engine. By using the CoolBasic CLI tools, you don't have to open the CoolBasic Editor to run or build executables. This way you may use any IDE to program with CoolBasic, and you can run or build the project from a terminal environment - or directly from the batch file(s) provided.
+Simple command line tools for the CoolBasic game engine. By using the CoolBasic CLI tools, you don't have to open the CoolBasic Editor to run or build executables. This way you may use any IDE to program with CoolBasic, and you can check the syntax and run or build the project from any terminal environment - or directly from the batch file(s) provided.
 
 Prerequisites
 -------
@@ -18,19 +18,27 @@ Setup
 
 The only file you need to configure is the `cbcli-config.ini` which contains the following variables:
 
-| Variable          | Description             | Example value                   | Note                         |
-| ----------------- | ----------------------- | ------------------------------- | ------------------------------- |
-| SOURCE_FILE_PATH  | Source code file path   | C:\CoolBasic\Help\lessons\01.cb | Main `.cb` source code file     |
-| SOURCE_DIR_PATH   | Source directory path   | C:\CoolBasic\Help\lessons\      | Path has to end with `\`        |
-| TARGET_EXE_PATH   | Target executable path  | C:\CoolBasic\cbRun              | `.exe` is auto-appended         |
+| Variable          | Description             | Example value                   | Note                      |
+| ----------------- | ----------------------- | ------------------------------- | ------------------------- |
+| SOURCE_FILE_PATH  | Source code file path   | C:\CoolBasic\Help\lessons\01.cb | `.cb` source code file    |
+| SOURCE_DIR_PATH   | Source directory path   | C:\CoolBasic\Help\lessons\      | Path has to end with `\`  |
+| TARGET_EXE_PATH   | Target executable path  | C:\CoolBasic\cbRun              | `.exe` is auto-appended   |
 | COMPILER_DIR_PATH | Compiler directory path | C:\CoolBasic\IDE                | Root for `CBCompiler.exe` |
 
 The variables and values are joined together with a `=` without any whitespace or quotations around values.
 
+Check
+-------
+
+To check syntax: execute the batch file `cbcli-check.bat` by double-clicking it, or call it from a terminal environment:
+
+- CMD: `cbcli-check`
+- Shell: `./cbcli-check.bat`
+
 Run
 -------
 
-Execute the batch file `cbcli-run.bat` by double-clicking it, or call it from a terminal environment:
+To compile and run: execute the batch file `cbcli-run.bat` by double-clicking it, or call it from a terminal environment:
 
 - CMD: `cbcli-run`
 - Shell: `./cbcli-run.bat`
@@ -38,7 +46,7 @@ Execute the batch file `cbcli-run.bat` by double-clicking it, or call it from a 
 Build
 -------
 
-Execute the batch file `cbcli-build.bat` by double-clicking it, or call it from a terminal environment:
+To build executable: execute the batch file `cbcli-build.bat` by double-clicking it, or call it from a terminal environment:
 
 - CMD: `cbcli-build`
 - Shell: `./cbcli-build.bat`
