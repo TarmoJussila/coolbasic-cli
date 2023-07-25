@@ -1,6 +1,6 @@
 # CoolBasic CLI
 
-Simple command line tools for the CoolBasic game engine. By using the CoolBasic CLI tools, you don't have to use the CoolBasic Editor to build executables. This way you may use any IDE to program with CoolBasic, and you can check the syntax and run or build the project from a terminal environment - or directly from the batch file(s) provided.
+Simple command line tools for the CoolBasic game engine. By using the CoolBasic CLI tools, you don't have to use the CoolBasic Editor to build executables. This way you may use any IDE to program with CoolBasic, and you can check the syntax and run or build the project from a terminal environment - or directly from the batch files provided.
 
 Prerequisites
 -------
