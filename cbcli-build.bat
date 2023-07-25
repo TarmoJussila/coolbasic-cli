@@ -1,14 +1,13 @@
 @echo off
+setlocal
 
-:: Project-related paths
-set "SOURCE_FILE_PATH=[SOURCE_FILE_PATH.CB]"
-set "SOURCE_DIR_PATH=[SOURCE_DIR_PATH\]"
-set "EXE_PATH=[EXE_PATH]"
+:: Load configuration file variables
+for /f "tokens=1,* delims==" %%a in (cbcli-config.ini) do (
+    set "%%a=%%b"
+)
 
-:: Tool-related paths
-set "COMPILER_DIR_PATH=[COMPILER_DIR_PATH]"
+:: Compiler-related path variables
 set "COMPILER_FILE_PATH=%COMPILER_DIR_PATH%\CBCompiler.exe"
-
 set "COMPILER_CONFIG_PATH=%COMPILER_DIR_PATH%\Compiler"
 set "COMPILER_OUT_PATH=%COMPILER_DIR_PATH%\Editor.out"
 
@@ -16,7 +15,7 @@ set "COMPILER_OUT_PATH=%COMPILER_DIR_PATH%\Editor.out"
 (
 echo type=2
 echo sourcedir=%SOURCE_DIR_PATH%
-echo buildto=%EXE_PATH%
+echo buildto=%TARGET_EXE_PATH%
 echo force=0
 ) > "%COMPILER_CONFIG_PATH%"
 
@@ -25,3 +24,5 @@ copy /Y "%SOURCE_FILE_PATH%" "%COMPILER_OUT_PATH%"
 
 :: Build with compiler
 "%COMPILER_FILE_PATH%"
+
+endlocal
