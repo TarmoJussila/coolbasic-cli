@@ -8,9 +8,9 @@ Prerequisites
 CoolBasic compiler (`CBCompiler.exe`) is required to use the CLI tools. The easiest way to obtain the compiler is to install the CoolBasic game engine. You can [download](https://www.coolbasic.com) the game engine from the official CoolBasic website.
 
 1) Download and install the CoolBasic game engine (see link above)
-2) Clone this repository or download its contents (the .ini and .bat files)
-3) Copy `cbcli-config.ini`, `cbcli-run.bat` and `cbcli-build.bat` to your project directory
-4) Modify the variables in `cbcli-config.ini` to match your project path and the compiler path
+2) Clone this repository or download its contents (`.ini` and `.bat` files)
+3) Copy the `.ini` and the `.bat` files to your chosen project directory
+4) Modify the values in `cbcli-config.ini` to match your project path and the compiler path
 5) Great! Now you can simply execute the batch files to run or build your CoolBasic project!
 
 Setup
