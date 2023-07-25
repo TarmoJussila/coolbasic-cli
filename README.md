@@ -11,15 +11,19 @@ CoolBasic compiler (*CBCompiler.exe*) is required to use the CLI tools. The easi
 2) Clone this repository or download its contents (the .ini and .bat files)
 3) Copy `cbcli-config.ini`, `cbcli-run.bat` and `cbcli-build.bat` to your project directory
 4) Modify the variables in `cbcli-config.ini` to match your project path and the compiler path
-
-| Variable          | Description             | Example value                   |
-| ----------------- | ----------------------- | ------------------------------- |
-| SOURCE_FILE_PATH  | Source CB file path     | C:\CoolBasic\Help\lessons\01.cb |
-| SOURCE_DIR_PATH   | Source directory path   | C:\CoolBasic\Help\lessons\      |
-| TARGET_EXE_PATH   | Target executable path  | C:\CoolBasic\cbRun              |
-| COMPILER_DIR_PATH | Compiler directory path | C:\CoolBasic\IDE                |
-
 5) Great! Now you can simply execute the batch files to run or build your CoolBasic project!
+
+Setup
+-------
+
+The only file you need to configure is the `cbcli-config.ini` which contains the following variables:
+
+| Variable          | Description                | Example value                   | Note                                      |
+| ----------------- | -------------------------- | ------------------------------- | ----------------------------------------- |
+| SOURCE_FILE_PATH  | Source code file path      | C:\CoolBasic\Help\lessons\01.cb | CoolBasic project main `.cb` source file  |
+| SOURCE_DIR_PATH   | Source directory path      | C:\CoolBasic\Help\lessons\      | Make sure directory path ends with `\`    |
+| TARGET_EXE_PATH   | Target executable path     | C:\CoolBasic\cbRun              | Extension `.exe` is auto-appended         |
+| COMPILER_DIR_PATH | Compiler directory path    | C:\CoolBasic\IDE                | Directory has to contain `CBCompiler.exe` |
 
 Run
 -------
