@@ -11,9 +11,12 @@ set "COMPILER_FILE_PATH=%COMPILER_DIR_PATH%\CBCompiler.exe"
 set "COMPILER_CONFIG_PATH=%COMPILER_DIR_PATH%\Compiler"
 set "COMPILER_OUT_PATH=%COMPILER_DIR_PATH%\Editor.out"
 
+:: Override target executable path for running
+set "TARGET_EXE_PATH=%COMPILER_DIR_PATH%\cbRun"
+
 :: Override compiler build configuration
 (
-echo type=2
+echo type=1
 echo sourcedir=%SOURCE_DIR_PATH%
 echo buildto=%TARGET_EXE_PATH%
 echo force=0
