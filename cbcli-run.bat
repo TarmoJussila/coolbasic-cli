@@ -1,3 +1,4 @@
+:: CoolBasic CLI - Compile and Run
 @echo off
 setlocal
 
@@ -30,10 +31,10 @@ set "TARGET_EXE_PATH=%COMPILER_DIR_PATH%\cbRun"
 
 :: Override compiler build configuration
 (
-echo type=1
-echo sourcedir=%SOURCE_DIR_PATH%
-echo buildto=%TARGET_EXE_PATH%
-echo force=0
+    echo type=1
+    echo sourcedir=%SOURCE_DIR_PATH%
+    echo buildto=%TARGET_EXE_PATH%
+    echo force=0
 ) > "%COMPILER_CONFIG_PATH%"
 
 :: Copy the source file content for compiling

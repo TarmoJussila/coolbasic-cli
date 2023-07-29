@@ -1,3 +1,4 @@
+:: CoolBasic CLI - Build Executable
 @echo off
 setlocal
 
@@ -27,10 +28,10 @@ set "COMPILER_OUT_PATH=%COMPILER_DIR_PATH%\Editor.out"
 
 :: Override compiler build configuration
 (
-echo type=2
-echo sourcedir=%SOURCE_DIR_PATH%
-echo buildto=%TARGET_EXE_PATH%
-echo force=0
+    echo type=2
+    echo sourcedir=%SOURCE_DIR_PATH%
+    echo buildto=%TARGET_EXE_PATH%
+    echo force=0
 ) > "%COMPILER_CONFIG_PATH%"
 
 :: Copy the source file content for compiling
