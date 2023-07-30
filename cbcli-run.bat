@@ -45,7 +45,7 @@ copy /Y "%SOURCE_FILE_PATH%" "%COMPILER_OUT_PATH%"
 
 :: Run the executable
 pushd "%SOURCE_DIR_PATH%"
-"%TARGET_EXE_PATH%"
+"%TARGET_EXE_PATH%.exe"
 popd
 
 endlocal
