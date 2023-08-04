@@ -20,14 +20,14 @@ The only file you need to configure is the `cbcli-config.ini` which contains the
 
 | Variable          | Description             | Example value                   | Note                      |
 | ----------------- | ----------------------- | ------------------------------- | ------------------------- |
-| COMPILER_DIR_PATH | Compiler directory path | C:\CoolBasic\IDE                | Root of `CBCompiler.exe`  |
 | SOURCE_FILE_PATH  | Source code file path   | C:\CoolBasic\Help\lessons\01.cb | `.cb` source code file    |
 | SOURCE_DIR_PATH   | Source directory path   | C:\CoolBasic\Help\lessons\      | Path has to end with `\`  |
 | TARGET_EXE_PATH   | Target executable path  | C:\CoolBasic\cbRun              | `.exe` is auto-appended   |
+| COMPILER_DIR_PATH | Compiler directory path | C:\CoolBasic\IDE                | Root of `CBCompiler.exe`  |
 
 The variables and values are joined together with a `=` without any whitespace or quotations around values.
 
-**Note:** You can also pass the path values as arguments to the batch files to avoid using the `.ini` file (see below).
+**Note:** You can also pass values as arguments to the batch files to override values from the `.ini` file (see below).
 
 Check
 -------
@@ -36,9 +36,9 @@ To check syntax: execute the batch file `cbcli-check.bat` by double-clicking it,
 
 - Shell: `./cbcli-check`
 
-Alternatively, execute the batch file with path arguments (to avoid using the `.ini` file):
+Alternatively, execute the batch file with path arguments (to override values from the `.ini` file):
 
-- Shell: `./cbcli-check "[COMPILER_DIR_PATH]" "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]"`
+- Shell: `./cbcli-check "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"`
 
 Run
 -------
@@ -47,9 +47,9 @@ To compile and run: execute the batch file `cbcli-run.bat` by double-clicking it
 
 - Shell: `./cbcli-run`
 
-Alternatively, execute the batch file with path arguments (to avoid using the `.ini` file):
+Alternatively, execute the batch file with path arguments (to override values from the `.ini` file):
 
-- Shell: `./cbcli-run "[COMPILER_DIR_PATH]" "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]"`
+- Shell: `./cbcli-run "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"`
 
 Build
 -------
@@ -58,6 +58,6 @@ To build executable: execute the batch file `cbcli-build.bat` by double-clicking
 
 - Shell: `./cbcli-build`
 
-Alternatively, execute the batch file with path arguments (to avoid using the `.ini` file):
+Alternatively, execute the batch file with path arguments (to override values from the `.ini` file):
 
-- Shell: `./cbcli-build "[COMPILER_DIR_PATH]" "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]"`
+- Shell: `./cbcli-build "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"`

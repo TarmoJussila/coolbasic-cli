@@ -2,6 +2,8 @@
 @echo off
 setlocal
 
+echo "Build executable started..."
+
 :: Load configuration file variables
 for /f "tokens=1,* delims==" %%a in (cbcli-config.ini) do (
     set "%%a=%%b"
@@ -9,16 +11,16 @@ for /f "tokens=1,* delims==" %%a in (cbcli-config.ini) do (
 
 :: Argument variable parameters
 if not "%~1"=="" (
-    set "COMPILER_DIR_PATH=%~1"
+    set "SOURCE_FILE_PATH=%~1"
 )
 if not "%~2"=="" (
-    set "SOURCE_FILE_PATH=%~2"
+    set "SOURCE_DIR_PATH=%~2"
 )
 if not "%~3"=="" (
-    set "SOURCE_DIR_PATH=%~3"
+    set "TARGET_EXE_PATH=%~3"
 )
 if not "%~4"=="" (
-    set "TARGET_EXE_PATH=%~4"
+    set "COMPILER_DIR_PATH=%~4"
 )
 
 :: Compiler-related path variables
@@ -39,5 +41,7 @@ copy /Y "%SOURCE_FILE_PATH%" "%COMPILER_OUT_PATH%"
 
 :: Build with compiler
 "%COMPILER_FILE_PATH%"
+
+echo "Build executable complete."
 
 endlocal
