@@ -73,3 +73,8 @@ Alternatively, execute the batch file with path arguments (to override values fr
 ```
 ./cbcli-build "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"
 ```
+
+Docker image
+-------
+
+The CoolBasic CLI tools can also be found in a [Docker image](https://hub.docker.com/r/tarmojussila/coolbasic-cli-compiler) along with the CoolBasic compiler.
