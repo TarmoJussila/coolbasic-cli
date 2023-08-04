@@ -34,30 +34,42 @@ Check
 
 To check syntax: execute the batch file `cbcli-check.bat` by double-clicking it, or call it from a terminal:
 
-- Shell: `./cbcli-check`
+```
+./cbcli-check
+```
 
 Alternatively, execute the batch file with path arguments (to override values from the `.ini` file):
 
-- Shell: `./cbcli-check "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"`
+```
+./cbcli-check "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"
+```
 
 Run
 -------
 
 To compile and run: execute the batch file `cbcli-run.bat` by double-clicking it, or call it from a terminal:
 
-- Shell: `./cbcli-run`
+```
+./cbcli-run
+```
 
 Alternatively, execute the batch file with path arguments (to override values from the `.ini` file):
 
-- Shell: `./cbcli-run "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"`
+```
+./cbcli-run "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"
+```
 
 Build
 -------
 
 To build executable: execute the batch file `cbcli-build.bat` by double-clicking it, or call it from a terminal:
 
-- Shell: `./cbcli-build`
+```
+./cbcli-build
+```
 
 Alternatively, execute the batch file with path arguments (to override values from the `.ini` file):
 
-- Shell: `./cbcli-build "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"`
+```
+./cbcli-build "[SOURCE_FILE_PATH]" "[SOURCE_DIR_PATH]" "[TARGET_EXE_PATH]" "[COMPILER_DIR_PATH]"
+```
